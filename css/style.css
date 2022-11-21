@@ -248,6 +248,21 @@ img {
   background: #f5f4fa;
 }
 /* ------------------team ---------------- */
+/* -----------------constant ---------------- */
+.constant-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--text-title-color);
+}
+.constant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* -----------------constant ---------------- */
 
 /* ------------------footer---------------- */
 .footer {
