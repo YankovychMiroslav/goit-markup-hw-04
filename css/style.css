@@ -116,13 +116,16 @@ img {
 }
 .nav-link:hover,
 .nav-link:focus {
-  accent-color: var(--link-focus-color);
+  color: var(--link-focus-color);
 }
 .contact-nav {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: calc(24 / 14);
   letter-spacing: 0.02em;
   text-decoration: none;
+  fill: currentColor;
   color: var(--text-paragraf-color);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -141,7 +144,15 @@ img {
 /* ------------------HAEDER---------------- */
 
 /* ------------------hero---------------- */
-
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Img\ 10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--text-title-color);
+}
 .hero-h {
   margin: 0 auto;
   text-align: center;
@@ -177,11 +188,7 @@ img {
 /* ------------------hero---------------- */
 
 /* ------------------featore ---------------- */
-.hero {
-  background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+
 .featore {
   padding-bottom: 0px;
 }
@@ -203,6 +210,13 @@ img {
   color: var(--text-paragraf-color);
 }
 .featore-icon {
+}
+.featore-svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -263,7 +277,6 @@ img {
   margin-top: 16px;
 }
 .social-link {
-  display: flex;
   padding: 12px;
 
   width: 44px;
@@ -286,11 +299,6 @@ img {
 .constant {
   padding: 94px 0;
 }
-.container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .constant-title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -301,9 +309,6 @@ img {
 .constant-list {
   display: flex;
   gap: 30px;
-}
-.constant-link {
-  fill: #afb1b8;
 }
 .constant-link {
   display: flex;
@@ -334,20 +339,19 @@ img {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-.footre-items:not(:last-child) {
-  margin-bottom: 9px;
-}
 .footer-logo {
-  display: block;
-  margin-bottom: 20px;
+  margin-right: 156px;
+  width: 145px;
   font-family: 'Raleway';
   font-size: 26px;
   line-height: calc(31 / 26);
   color: var(--link-focus-color);
 }
 .logo-footer {
+  width: 145px;
   color: var(--text-fon-white-color);
 }
+
 .contact-gps {
   display: block;
   font-style: normal;
@@ -364,6 +368,25 @@ img {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--link-focus-color);
+}
+.text {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: #ffffff;
+  font-style: normal;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ------------------footer---------------- */
