@@ -152,6 +152,8 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(47, 48, 58, 0.4);
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .hero-h {
   margin: 0 auto;
